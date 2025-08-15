@@ -1,7 +1,7 @@
 import microApp from '@micro-zoe/micro-app'
 import { useUserStore } from '@/stores/system'
 
-globalThis.microApp = microApp
+window.microApp = microApp
 
 const ConvergedPlatformToken = useUserStore.getState().userInfo?.accessToken
 
